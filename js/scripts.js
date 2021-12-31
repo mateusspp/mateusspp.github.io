@@ -32,3 +32,17 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+
+let contar = 1;
+
+function modoNorturno() {
+    if (contar == 1) {
+        mudancaFundo = document.body.style.setProperty("--bs-body-bg", "black");
+        contar +=1;    
+    }
+    else {
+        mudancaFundo = document.body.style.setProperty("--bs-body-bg", "white");
+        contar -=1;
+    };
+};
